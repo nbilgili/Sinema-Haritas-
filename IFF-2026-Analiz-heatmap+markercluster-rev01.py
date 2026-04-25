@@ -86,7 +86,7 @@ def build_map(df, coords, start=(41.0082, 28.9784), zoom=12):
 
     HeatMap(heat_data).add_to(harita)
     
-    harita.fit_bounds(harita.get_bounds())
+    harita.fit_bounds(harita.get_bounds(), padding=(50, 50))
 
     return harita
 
