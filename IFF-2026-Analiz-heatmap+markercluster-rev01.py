@@ -40,7 +40,7 @@ coords={
 # In[5]:
 
 
-def build_map(df, coords, start=(41.02, 29.01), zoom=12):
+def build_map(df, coords, start=(41.01141646457113, 29.004002985158245), zoom=12):
 
     harita = folium.Map(location=start, zoom_start=zoom, tiles="CartoDB Voyager", control_scale=True)
 
@@ -85,8 +85,6 @@ def build_map(df, coords, start=(41.02, 29.01), zoom=12):
         heat_data.append([coord[0], coord[1], len(data)])
 
     HeatMap(heat_data).add_to(harita)
-
-    harita.fit_bounds([[40.97, 28.95],   [41.07, 29.07]])
 
     return harita
 
