@@ -40,7 +40,7 @@ coords={
 # In[5]:
 
 
-def build_map(df, coords, start=(40.96955518790454, 29.038563907036295), zoom=12):
+def build_map(df, coords, start=(40.998452847231455, 29.03032416110551), zoom=12):
 
     harita = folium.Map(location=start, zoom_start=zoom, tiles="CartoDB Voyager", control_scale=True)
 
